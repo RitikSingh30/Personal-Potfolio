@@ -56,7 +56,7 @@ const ContactMe = () => {
         try{
             const response = await axios({
                 method: 'post',
-                url: process.env.REACT_APP_SERVER_URL + '/RitikSingh30/sendMail',
+                url: process.env.REACT_APP_SERVER_URL + 'RitikSingh30/sendMail',
                 data
               });
 
