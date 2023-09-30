@@ -58,11 +58,11 @@ const HeroSection = () => {
               <MainBtn text={"Contact Me"} Icon={PiPaperPlaneRightBold} link={'#Contact Me'}/>
             </div>
             {/* scroll down button  */}
-            <div className='font-poppins-500 flex gap-x-2 items-center hover:translate-y-1 cursor-pointer transition-all duration-400 ease-in'>
+            <a href='#About' className='font-poppins-500 flex gap-x-2 items-center hover:translate-y-1 cursor-pointer transition-all duration-400 ease-in'>
               <RiMouseLine className='fill-firstColor text-[2rem]'/>
               <p className='text-[0.9rem]'>Scroll Down</p>
               <BsArrowDownShort className='fill-firstColor text-[1.5rem]'/>
-            </div>
+            </a>
         </div>
           {/* main page profile picture  */}
           <div className='relative'>

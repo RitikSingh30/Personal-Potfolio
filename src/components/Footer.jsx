@@ -21,14 +21,26 @@ const Footer = () => {
         {/* social media links  */}
         <div className='flex gap-x-[8rem]'>
             <ul className='flex gap-x-3'>
-                <li className='font-poppins-500'>About</li>
-                <li className='font-poppins-500'>Projects</li>
-                <li className='font-poppins-500'>Contact Me</li>
+              <a href='#About' className='cursor-pointer'>
+                <li className='font-poppins-500 hover:text-firstColorLighter'>About</li>
+              </a>
+              <a href='#Projects' className='cursor-pointer'>
+                <li className='font-poppins-500 hover:text-firstColorLighter'>Projects</li>
+              </a>
+              <a href='#Contact Me' className='cursor-pointer'>
+                <li className='font-poppins-500 hover:text-firstColorLighter'>Contact Me</li>
+              </a>
             </ul>
             <div className='flex gap-x-6'>
-                <SlSocialLinkedin className='fill-white text-[1.2rem]'/>
-                <TfiTwitter className='fill-white text-[1.2rem]'/>
-                <IoLogoInstagram className='fill-white text-[1.2rem]'/>
+              <a href='https://www.linkedin.com/in/ritik-singh-171405212/' target='_blank' className='cursor-pointer'>
+                <SlSocialLinkedin className='fill-white text-[1.2rem] hover:fill-firstColorLighter'/>
+              </a>
+              <a href='https://twitter.com/RitikSi15789790' target='_blank' className='cursor-pointer'>
+                <TfiTwitter className='fill-white text-[1.2rem] hover:fill-firstColorLighter'/>
+              </a>
+              <a href='https://www.instagram.com/lx_ritik_singh_xl/?next=%2F' target='_blank' className='cursor-pointer'>
+                <IoLogoInstagram className='fill-white text-[1.2rem] hover:fill-firstColorLighter'/>
+              </a>
             </div>
         </div>
       </div>

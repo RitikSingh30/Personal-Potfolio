@@ -12,9 +12,11 @@ const Navbar = () => {
 
   const changePageModeColor = () => {
     if(darkMode){
+      localStorage.setItem('isUiDark',false);
       dispatch(setDarkMode(false));
     }
     else{
+      localStorage.setItem('isUiDark',true);
       dispatch(setDarkMode(true));
     }
   }
