@@ -33,6 +33,13 @@ app.post('/RitikSingh30/sendMail', async(req,res) => {
     }
 })
 
+app.get("/", (req, res) => {
+	return res.json({
+		success: true,
+		message: "Your server is up and running ...",
+	});
+});
+
 
 app.listen(PORT, () => {
     console.log("We are live at " + PORT);
