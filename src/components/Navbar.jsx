@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import {BiMoon,BiSun} from 'react-icons/bi'
 import { useDispatch, useSelector } from 'react-redux';
 import { setDarkMode } from '../Redux/Slice/DarkModeSlice';

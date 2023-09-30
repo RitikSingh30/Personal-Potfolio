@@ -11,7 +11,7 @@ const Qualification = () => {
   const changeData = (ind) => {
     const newArray = [...showOrHideQual];
     newArray[ind] = !newArray[ind];
-    ind = ind == 0 ? 1 : 0 ;
+    ind = ind === 0 ? 1 : 0 ;
     newArray[ind] = !(newArray[ind]);
     setShowOrHideQual(newArray);
   }
