@@ -10,7 +10,7 @@ var cors = require('cors')
 const PORT = process.env.PORT || 4001
 
 app.use(cors({
-    origin: ['https://personal-potfolio-ten.vercel.app/'],
+    origin: "*",
     optionsSuccessStatus: 200
 }));
 
