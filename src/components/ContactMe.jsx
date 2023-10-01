@@ -52,17 +52,18 @@ const ContactMe = () => {
     ]
 
     const onsubmit = async(data) => {
-
+        const id = toast.loading("Please wait it would take couple of min to send message...");
         try{
             const response = await axios({
                 method: 'post',
                 url: process.env.REACT_APP_SERVER_URL + 'RitikSingh30/sendMail',
                 data
               });
-
+              toast.update(id, { render: "All is good", type: "success" });
               toast.success(response.data.message)
             
         }catch(error){
+            toast.update(id, { render: "All is good", type: "success" });
             console.log(error);
             toast.error("could not send the message")
         }
