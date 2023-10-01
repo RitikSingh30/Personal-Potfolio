@@ -60,7 +60,7 @@ const ContactMe = () => {
                 data
               });
               toast.update(id, { render: "All is good", type: "success" });
-              toast.success(response.data.message)
+            //   toast.success(response.data.message)
             
         }catch(error){
             toast.update(id, { render: "All is good", type: "success" });
