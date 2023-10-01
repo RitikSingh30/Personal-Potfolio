@@ -59,14 +59,13 @@ const ContactMe = () => {
                 url: process.env.REACT_APP_SERVER_URL + 'RitikSingh30/sendMail',
                 data
               });
-              toast.dismiss(id);
-            //   toast.success(response.data.message)
-            
+            toast.success(response.data.message)
+              
         }catch(error){
-            toast.dismiss(id);
             console.log(error);
             toast.error("could not send the message")
         }
+        toast.dismiss(id);
         reset();
     }
   return (
