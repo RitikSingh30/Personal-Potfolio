@@ -59,7 +59,7 @@ const ContactMe = () => {
                 url: process.env.REACT_APP_SERVER_URL + 'RitikSingh30/sendMail',
                 data
               });
-              toast.update(id, { render: "All is good", type: "success" });
+              toast.update(id, { render: "Please wait it would take couple of min to send message...", type: "success" });
             //   toast.success(response.data.message)
             
         }catch(error){
