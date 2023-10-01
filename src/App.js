@@ -13,7 +13,7 @@ function App() {
   const {darkMode} = useSelector((store) => store?.changePageColor);
 
   return (
-    <div className={`${darkMode ? "bg-DarkColor text-white" : "bg-white text-black"}`}>
+    <div className={`${darkMode ? "bg-DarkColor text-white" : "bg-white text-black"} sm:px-[1rem]`}>
       <Navbar/>
       <HeroSection/>
       <AboutMe/>

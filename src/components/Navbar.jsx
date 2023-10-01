@@ -21,8 +21,8 @@ const Navbar = () => {
   }
 
   return (
-    <header className={`sticky top-0 z-10 ${darkMode ? "bg-DarkColor text-white" : "bg-white text-black"}`}>
-      <nav className='max-w-[968px] mx-auto flex justify-between py-[1.5rem]'>
+    <header className={`sticky top-0 z-10 ${darkMode ? "bg-DarkColor text-white" : "bg-white text-black"} msm:hidden sm:hidden md:block`}>
+      <nav className='md:max-w-[715px] lg:max-w-[960px] mx-auto flex justify-between py-[1.5rem]'>
         <a href='#' className='font-poppins font-poppins-500 text-[1rem] hover:text-firstColor'>Ritik</a>
         <div className='flex items-center gap-x-3'>
           <Scrollspy items={NavBarData} currentClassName="text-firstColor" 

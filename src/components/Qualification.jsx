@@ -19,8 +19,8 @@ const Qualification = () => {
   return (
     <div id='Qualification' className='mt-[10.5rem]'>
         <div>
-            <h3 className='font-poppins-600 text-[2.25rem] text-center'>Qualifications</h3>
-            <p className={`text-center ${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`}>My Educational Qualification & Work Experience</p>
+            <h3 className='font-poppins-600 sm2:text-[1.7rem] lg:text-[2.25rem] text-center'>Qualifications</h3>
+            <p className={`text-center md:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`}>My Educational Qualification & Work Experience</p>
         </div>
         <div className='flex gap-x-8 justify-center mt-[3.8rem]'>
             <div className={`flex items-center gap-x-2 ${showOrHideQual[0] ? 'text-firstColor' :`${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`} cursor-pointer`} onClick={() => changeData(0)}>
@@ -35,12 +35,12 @@ const Qualification = () => {
        {
         showOrHideQual[0] ? (
             <>  
-            <div className='flex justify-center gap-x-6 mt-[3rem]'>
-                <div className='flex flex-col justify-between'>
+            <div className='flex justify-center gap-x-6 mt-[3rem] msm1:px-4'>
+                <div className='flex flex-col justify-between msm1:gap-y-6'>
                     <div className='font-poppins-600 max-w-[15rem]'>
-                        <h2 className='text-[1.2rem]'>Bachelor of Engineering</h2>
-                        <a href='https://www.nmiet.edu.in/' target='_blank'>
-                            <p className={`${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Nutan Maharashtra Institute of Engineering and Technology</p>
+                        <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Bachelor of Engineering</h2>
+                        <a href='https://www.nmiet.edu.in/' target='_blank' className='msm1:max-w-[10rem] '>
+                            <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Nutan Maharashtra Institute of Engineering and Technology</p>
                         </a>
                         <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
                             <VscCalendar/>
@@ -48,9 +48,9 @@ const Qualification = () => {
                         </div>
                     </div>
                     <div className='font-poppins-600 max-w-[15rem]'>
-                        <h2 className='text-[1.2rem]'>Secondary School</h2>
+                        <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Secondary School</h2>
                         <a href='https://gayatrischoolpune.com/' target='_blank'>
-                            <p className={`${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Gayatri English Medium School and Jr. College</p>
+                            <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Gayatri English Medium School and Jr. College</p>
                         </a>
                         <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
                             <VscCalendar/>
@@ -66,9 +66,9 @@ const Qualification = () => {
                     <div className='h-[0.813rem] w-[0.813rem] bg-firstColor rounded-full'></div>
                 </div>
                 <div className='font-poppins-600 self-end max-w-[15rem]'>
-                    <h2 className='text-[1.2rem]'>Senior Secondary School</h2>
+                    <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Senior Secondary School</h2>
                     <a href='https://gayatrischoolpune.com/' target='_blank'>
-                        <p className={`${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Gayatri English Medium School and Jr. College</p>
+                        <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Gayatri English Medium School and Jr. College</p>
                     </a>
                     <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
                         <VscCalendar/>
@@ -77,11 +77,11 @@ const Qualification = () => {
                 </div>
             </div></>
             ) : (<>  
-            <div className='flex justify-center gap-x-6 mt-[3rem]'>
+            <div className='flex justify-center gap-x-6 mt-[3rem] msm1:px-4'>
                 <div className='font-poppins-600'>
-                    <h2 className='text-[1.2rem]'>BA3 Intern</h2>
+                    <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>BA3 Intern</h2>
                     <a href='https://home.barclays/' target='_blank'>
-                        <p className={`${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Barclays</p>
+                        <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Barclays</p>
                     </a>
                     <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
                         <VscCalendar/>
@@ -96,9 +96,9 @@ const Qualification = () => {
                     <div className='h-[0.813rem] w-[0.813rem] bg-firstColor rounded-full'></div>
                 </div>
                 <div className='font-poppins-600 self-end'>
-                    <h2 className='text-[1.2rem]'>DSA/CP Instructor</h2>
+                    <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>DSA/CP Instructor</h2>
                     <a href='https://www.tle-eliminators.com/' target='_blank'>
-                        <p className={`${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>TLE Eliminator</p>
+                        <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>TLE Eliminator</p>
                     </a>
                     <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
                         <VscCalendar/>

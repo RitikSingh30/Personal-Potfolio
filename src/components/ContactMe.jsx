@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {CiMail,CiTwitter,CiLocationOn} from 'react-icons/ci'
+import {CiTwitter,CiLocationOn} from 'react-icons/ci'
+import {HiOutlineMail} from 'react-icons/hi'
 import { useForm } from 'react-hook-form';
 import {PiPaperPlaneRightBold} from 'react-icons/pi'
 import MainBtn from './MainBtn';
@@ -32,7 +33,7 @@ const ContactMe = () => {
 
     const contactData = [
         {
-            contactIcon:CiMail,
+            contactIcon:HiOutlineMail,
             contactName:"Email",
             contactDesc:"ritikraj.rr87@gmail.com",
             contactLink:"mailto:ritikraj.rr87@gmail.com"
@@ -71,17 +72,17 @@ const ContactMe = () => {
   return (
     <div id='Contact Me' className='mt-[6rem]'>
        <div>
-        <h3 className='font-poppins-600 text-[2.25rem] text-center'>Contact Me</h3>
-        <p className={`text-center ${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`}>Want to connect? My inbox is always open!</p>
+        <h3 className='font-poppins-600 sm2:text-[1.7rem] lg:text-[2.25rem] text-center'>Contact Me</h3>
+        <p className={`text-center md:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`}>Want to connect? My inbox is always open!</p>
       </div>
-      <div className='flex justify-center mt-12 gap-x-[6rem]'>
+      <div className='flex msm1:flex-col msm1:px-6 msm1:items-center msm1:gap-y-6 justify-center mt-12 gap-x-[6rem]'>
         {/* social media handle  */}
-        <div className='flex flex-col gap-y-7'>
+        <div className='flex flex-col gap-y-7 mlg:w-[30%] msm1:self-start'>
             {
                 contactData?.map((Data,index) => (
                     <a href={Data?.contactLink} target='_blank' key={index}>
                     <div className='flex items-center gap-x-3'>
-                        <Data.contactIcon className='text-firstColor text-[2rem]'/>
+                        <Data.contactIcon className={`text-firstColor text-[2rem] msm1:hidden`}/>
                         <div>
                             <h4 className='font-poppins-500 text-[1.25rem]'>{Data.contactName}</h4>
                             <p className='text-[0.875rem] font-poppins-500 text-[#A19FAD]'>{Data.contactDesc}</p>
@@ -92,8 +93,8 @@ const ContactMe = () => {
             }
         </div>
         {/* contact me form  */}
-        <form onSubmit={handleSubmit(onsubmit)} className='font-poppins-400 flex flex-col gap-y-6'>
-            <div className='flex gap-x-6'>
+        <form onSubmit={handleSubmit(onsubmit)} className='font-poppins-400 flex flex-col gap-y-6 mlg:w-[40%] msm1:w-[100%]'>
+            <div className='flex lg:flex-row sm3:flex-col sm3:gap-y-6 gap-x-6'>
                 <div className={`border-firstColor border-2 rounded-md ${darkMode ? "bg-DarkInputColor" : "bg-inputColor"} p-3 ${changeBorder[0] ? 'focus-within:border-[#7fff00]'
                  : 'focus-within:border-[#ff4500]'}`}>
                     <label htmlFor='fullName' className='flex flex-col'>

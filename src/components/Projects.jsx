@@ -48,37 +48,37 @@ const Projects = () => {
   return (
     <div id='Projects' className='mt-[8rem]'>
       <div>
-        <h3 className='font-poppins-600 text-[2.25rem] text-center'>Projects</h3>
-        <p className={`text-center ${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`}>Most recent work</p>
+        <h3 className='font-poppins-600 sm2:text-[1.7rem] lg:text-[2.25rem] text-center'>Projects</h3>
+        <p className={`text-center md:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"}`}>Most recent work</p>
       </div>
-      <div className='flex items-center justify-center mt-[4rem] gap-x-12'>
-        <IoIosArrowBack className='text-firstColor text-[3.5rem] cursor-pointer' onClick={() => changeProjectIndex(false)}/>
+      <div className='flex items-center justify-center mt-[4rem] sm3:gap-x-4 lg:gap-x-12'>
+        <IoIosArrowBack className='text-firstColor sm3:text-[2rem] lg:text-[3.5rem] cursor-pointer' onClick={() => changeProjectIndex(false)}/>
         {
           projectData?.map((data,index) => (
-            <div className={`flex gap-x-[5rem] ${showProject[index] ? 'block' : 'hidden'}`} key={index}>
+            <div className={`flex msm:w-[80%] mmd:items-center msm:flex-col msm:gap-y-[2rem] sm3:gap-x-[2rem] lg:gap-x-[5rem] ${showProject[index] ? 'block' : 'hidden'}`} key={index}>
               <img src={data?.imgSrc} alt={`${data?.altText}`} loading='lazy' className='w-[21.25rem] h-[11.25rem]'/>
-              <div className='flex flex-col gap-y-3'>
+              <div className='flex flex-col gap-y-3 msm:w-full msm:items-center'>
                 <h3 className='text-[1.25rem] font-poppins-600'>{data?.projectName}</h3>
-                <p className={`text-[1rem] font-poppins-500 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} max-w-[20rem]`}>{data?.projectDesc}</p>
+                <p className={`msm:w-full text-[1rem] font-poppins-500 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} sm:max-w-[20rem]`}>{data?.projectDesc}</p>
                 <a href={data?.projectLink} target='_blank'><MainBtn text={"Check Out"} Icon={ImArrowRight2} translate={'group-hover:translate-x-1'}/></a>
               </div>
             </div>
           ))
         }
         {
-          showProject[2] ? (<div className='flex gap-x-[5rem]'>
+          showProject[2] ? (<div className='flex msm:w-[80%] mmd:items-center msm:flex-col msm:gap-y-[2rem] sm3:gap-x-[2rem] lg:gap-x-[5rem]'>
           <video autoPlay muted loop className='w-[21.25rem] h-[11.25rem]'>
             <source src={PersonalPotfolio} type='video/mp4'/>
             Sorry, your browser doesn't support videos.
           </video>
-          <div className='flex flex-col gap-y-3'>
+          <div className='flex flex-col gap-y-3  msm:w-full msm:items-center'>
             <h3 className='text-[1.25rem] font-poppins-600'>Personal Potfolio Website</h3>
-            <p className={`text-[1rem] font-poppins-500 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} max-w-[20rem]`}>My Personal Potfolio Website made using MERN Stack with a clear and minimul UI</p>
-            <MainBtn text={"Check Out"} Icon={ImArrowRight2} translate={'group-hover:translate-x-1'}/>
+            <p className={`msm:w-full text-[1rem] font-poppins-500 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} sm:max-w-[20rem]`}>My Personal Potfolio Website made using MERN Stack with a clear and minimul UI</p>
+            <a href='https://personal-potfolio-ten.vercel.app/' target='_blank'><MainBtn text={"Check Out"} Icon={ImArrowRight2} translate={'group-hover:translate-x-1'}/></a>
           </div>
         </div>) : null
         }
-        <IoIosArrowForward className='text-firstColor text-[3.5rem] cursor-pointer' onClick={() => changeProjectIndex(true)}/>
+        <IoIosArrowForward className='text-firstColor sm3:text-[2rem] lg:text-[3.5rem] cursor-pointer' onClick={() => changeProjectIndex(true)}/>
       </div>
       <div className='flex justify-center gap-x-2 mt-9'>{divElement}</div>
     </div>

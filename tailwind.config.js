@@ -13,6 +13,25 @@ module.exports = {
       'poppins-500':500,
       'poppins-600':600,
     },
+    screens:{
+      // min width
+      'sm3':'150px',
+      'sm2':'400px',
+      'sm1':'540px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      
+      // max width 
+      'mlg':{'max':'1024px'},
+      'mmd':{'max':'768px'},
+      'msm':{'max':'640px'},
+      'msm1':{'max':'570px'},
+      'msm2':{'max':'400px'},
+
+      
+    },
     extend: {
       colors: {
         firstColor: 'hsl(var(--hue-color),69%,61%)',
@@ -24,6 +43,7 @@ module.exports = {
         DarkInputColor:'hsl(var(--hue-color), 29%, 16%)',
         footerDarkBg:'hsl(var(--hue-color), 30%, 8%)',
       },
+
     },
   },
   plugins: [],

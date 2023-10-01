@@ -12,15 +12,15 @@ const Footer = () => {
   return (
     <div className={`${ darkMode ? "bg-footerDarkBg" : "bg-firstColor"} text-white mt-[4rem] p-[3rem]`}>
       {/* Name and links  */}
-      <div className='flex justify-center gap-x-[4rem]'>
+      <div className='flex msm1:flex-col msm1:gap-y-6 mmd:justify-between md:justify-center gap-x-[4rem]'>
         {/* Name and proffesion  */}
         <div className='flex flex-col gap-y-1'>
-            <h1 className='text-[2.25rem] font-poppins-600 max-w-[10rem]'>Ritik Singh</h1>
+            <h1 className='mmd:text-[1.7rem] md:text-[1.7rem] lg:text-[2.25rem] font-poppins-600 max-w-[10rem]'>Ritik Singh</h1>
             <p className='text-[0.875rem] font-poppins-500'>Full Stack Developer</p>
         </div>
         {/* social media links  */}
-        <div className='flex gap-x-[8rem]'>
-            <ul className='flex gap-x-3'>
+        <div className='flex mmd:flex-col mmd:gap-y-4 gap-x-[8rem]'>
+            <ul className='flex mmd:flex-col mmd:gap-y-2 gap-x-3'>
               <a href='#About' className='cursor-pointer'>
                 <li className='font-poppins-500 hover:text-firstColorLighter'>About</li>
               </a>
