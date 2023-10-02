@@ -53,7 +53,7 @@ const ContactMe = () => {
     ]
 
     const onsubmit = async(data) => {
-        const id = toast.loading("Please wait it would take couple of min to send message...");
+        const id = toast.loading("Please wait it would take couple of minutes to send message...");
         try{
             const response = await axios({
                 method: 'post',
@@ -64,7 +64,7 @@ const ContactMe = () => {
               
         }catch(error){
             console.log(error);
-            toast.error("could not send the message")
+            toast.error("could not send the message try again...")
         }
         toast.dismiss(id);
         reset();
