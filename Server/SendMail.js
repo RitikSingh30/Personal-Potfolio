@@ -14,15 +14,19 @@ const transporter = nodemailer.createTransport({
 });
 
 
-async function MainSender({from,subject,message}) {
+async function MailSender({from,subject,message}) {
   
-  const info = await transporter.sendMail({
-    from: `${from}`, 
-    to: "ritikraj.rr87@gmail.com", 
-    subject: `${subject}`, 
-    html: `<p>${message}</p>`, 
-  });
+  try{
+    const info = await transporter.sendMail({
+      from: `${from}`, 
+      to: "ritikraj.rr87@gmail.com", 
+      subject: `${subject}`, 
+      html: `<p>${message}</p>`, 
+    });
+  }catch(error){
+    throw error ;
+  }
 
 }
 
-module.exports = MainSender;
+module.exports = MailSender;
