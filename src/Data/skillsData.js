@@ -1,7 +1,7 @@
 import {BiCodeCurly,BiLogoReact,BiLogoGit} from 'react-icons/bi'
 import {TbTool,TbBrandCpp} from 'react-icons/tb'
 import {SiJavascript,SiTailwindcss,SiMongodb,SiVercel} from 'react-icons/si'
-import {FaNodeJs} from 'react-icons/fa'
+import {FaNodeJs,FaJava} from 'react-icons/fa'
 import {AiFillGithub} from 'react-icons/ai'
 import {MdOutlineKeyboardArrowLeft,MdOutlineKeyboardArrowRight} from 'react-icons/md'
 
@@ -18,6 +18,10 @@ const skillsData = [
         {
           skillIcon:TbBrandCpp,
           skillName:'C++'
+        },
+        {
+          skillIcon:FaJava,
+          skillName:'Java'
         }
       ]
     },

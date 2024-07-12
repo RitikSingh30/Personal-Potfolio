@@ -39,7 +39,7 @@ const Qualification = () => {
                 <div className='flex flex-col justify-between msm1:gap-y-6'>
                     <div className='font-poppins-600 max-w-[15rem]'>
                         <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Bachelor of Engineering</h2>
-                        <a href='https://www.nmiet.edu.in/' target='_blank' className='msm1:max-w-[10rem] '>
+                        <a href='https://www.nmiet.edu.in/' target='_blank' rel="noreferrer" className='msm1:max-w-[10rem] '>
                             <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Nutan Maharashtra Institute of Engineering and Technology</p>
                         </a>
                         <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
@@ -49,7 +49,7 @@ const Qualification = () => {
                     </div>
                     <div className='font-poppins-600 max-w-[15rem]'>
                         <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Secondary School</h2>
-                        <a href='https://gayatrischoolpune.com/' target='_blank'>
+                        <a href='https://gayatrischoolpune.com/' target='_blank' rel="noreferrer">
                             <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Gayatri English Medium School and Jr. College</p>
                         </a>
                         <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
@@ -67,7 +67,7 @@ const Qualification = () => {
                 </div>
                 <div className='font-poppins-600 self-end max-w-[15rem]'>
                     <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Senior Secondary School</h2>
-                    <a href='https://gayatrischoolpune.com/' target='_blank'>
+                    <a href='https://gayatrischoolpune.com/' target='_blank' rel="noreferrer">
                         <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Gayatri English Medium School and Jr. College</p>
                     </a>
                     <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
@@ -78,14 +78,26 @@ const Qualification = () => {
             </div></>
             ) : (<>  
             <div className='flex justify-center gap-x-6 mt-[3rem] msm1:px-4'>
-                <div className='font-poppins-600'>
-                    <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>BA3 Intern</h2>
-                    <a href='https://home.barclays/' target='_blank'>
-                        <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Barclays</p>
-                    </a>
-                    <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
-                        <VscCalendar/>
-                        <p className='text-[0.813rem] font-poppins-400'>June 2023 - August 2023</p>
+                <div className='flex flex-col justify-between msm1:gap-y-6'>
+                    <div className='font-poppins-600'>
+                        <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>Technology Developer</h2>
+                        <a href='https://home.barclays/' target='_blank' rel="noreferrer">
+                            <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Barclays</p>
+                        </a>
+                        <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
+                            <VscCalendar/>
+                            <p className='text-[0.813rem] font-poppins-400'>July 2024 - Present</p>
+                        </div>
+                    </div>
+                    <div className='font-poppins-600'>
+                        <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>BA3 Intern</h2>
+                        <a href='https://home.barclays/' target='_blank' rel="noreferrer">
+                            <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>Barclays</p>
+                        </a>
+                        <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
+                            <VscCalendar/>
+                            <p className='text-[0.813rem] font-poppins-400'>June 2023 - August 2023</p>
+                        </div>
                     </div>
                 </div>
                 <div className='flex flex-col items-center'>
@@ -97,7 +109,7 @@ const Qualification = () => {
                 </div>
                 <div className='font-poppins-600 self-end'>
                     <h2 className='sm3:text-[0.8rem] sm1:text-[1rem] lg:text-[1.2rem]'>DSA/CP Instructor</h2>
-                    <a href='https://www.tle-eliminators.com/' target='_blank'>
+                    <a href='https://www.tle-eliminators.com/' target='_blank' rel="noreferrer">
                         <p className={`sm3:text-[0.7rem] sm1:text-[0.9rem] lg:text-[1rem] ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} font-poppins-500`}>TLE Eliminator</p>
                     </a>
                     <div className={`flex items-center gap-x-1 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} mt-3`}>
