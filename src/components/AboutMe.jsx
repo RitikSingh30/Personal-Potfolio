@@ -21,7 +21,7 @@ const AboutMe = () => {
         <div className='flex flex-col gap-y-7 sm3:px-4'>
             <p className={`sm3:text-[0.85rem] sm:text-[0.77rem] md:text-[0.85rem] lg:text-[1rem] sm3:max-w-[36rem] sm:max-w-[19rem] md:max-w-[22rem] lg:max-w-[26rem] font-poppins-500 ${darkMode ? "text-[#BCBAC4]" : "text-textColor"} text-justify`}>
                 👨‍💼 Hi, I'm Ritik 👋, a Technology Developer at Barclays with over a year of experience as a Full Stack Web Developer, skilled in creating comprehensive websites using various technologies and frameworks.
-                👨‍🏫 Beyond my professional role, I have over two years of experience mentoring and teaching over 2,000 undergraduates in Data Structures and Algorithms (DSA) and Competitive Programming (CP) on platforms like TLE Eliminator. I provide one-on-one sessions to help students clear their doubts and achieve their goals.
+                👨‍🏫 Beyond my professional role, I have over two years of experience mentoring and teaching over 2,000 undergraduates in Data Structures and Algorithms (DSA) and Competitive Programming (CP) on platform like TLE Eliminator. I provide one-on-one sessions to help students clear their doubts and achieve their goals.
                 💻 I'm also a passionate competitive programmer, an ICPC Regionalist in 2023, and a specialist on Codeforces with a rating of 1556.
             </p>
             <a href={ResumeLink} download className='sm3:self-center lg:self-start'><MainBtn text={"Resume"} Icon={CgFileDocument} color={"text-white"}/></a>
